@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos | Dulces Cubanos — Panadería y Dulcería Cubana en Bradenton, FL</title>
+  <meta name="description" content="Visita Dulces Cubanos en Bradenton. Pedidos, catering, preguntas. ¡Hablamos Español! Tel (941) 555-0823 • 2847 Manatee Ave W • Abierto todos los días.">
+  <link rel="stylesheet" href="style.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">D</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Dulces Cubanos</span>
+          <span class="logo-tagline">Bradenton &amp; Sarasota, FL · Hablamos Español</span>
+        </div>
+      </a>
+      <div class="nav-right">
+        <button class="theme-toggle" data-theme-toggle aria-label="Cambiar modo oscuro" type="button">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="services.html">Menú</a></li>
+          <li><a href="portfolio.html">Galería</a></li>
+          <li><a href="contact.html" class="active btn btn-accent">Contáctanos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html">Inicio</a><span>›</span><strong>Contáctanos</strong>
+        </nav>
+        <h1>Ven a Probar lo Auténtico</h1>
+        <p>Estamos en Bradenton, listos para recibirte con un cafecito y el mejor dulce cubano de Florida.</p>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="section-label">Visítanos</div>
+            <h2>Dulces Cubanos</h2>
+            <p style="font-size:1.1rem; margin: 1rem 0;">
+              2847 Manatee Ave W<br>
+              Bradenton, FL 34205<br>
+              <strong>(941) 555-0823</strong><br>
+              info@dulcescubanos.com
+            </p>
+
+            <div style="margin: 1.5rem 0;">
+              <strong>Horario</strong><br>
+              Lunes a Viernes: 7:00 am — 7:00 pm<br>
+              Sábado: 7:00 am — 5:00 pm<br>
+              Domingo: 8:00 am — 2:00 pm
+            </div>
+
+            <p><strong>¡Hablamos Español!</strong> Llama o pasa por la tienda. Siempre hay algo caliente saliendo del horno.</p>
+
+            <a href="https://maps.google.com/?q=2847+Manatee+Ave+W+Bradenton+FL" target="_blank" class="btn btn-primary" style="margin-top:1rem;">Ver en Google Maps</a>
+          </div>
+
+          <div>
+            <div class="section-label">Haz tu pedido o pregunta</div>
+            <form action="mailto:info@dulcescubanos.com" method="POST" enctype="text/plain" class="contact-form">
+              <div class="form-row">
+                <div>
+                  <label for="name">Tu nombre</label>
+                  <input type="text" id="name" name="name" required placeholder="María González">
+                </div>
+                <div>
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(941) 555-1234">
+                </div>
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+              </div>
+
+              <div>
+                <label for="type">Tipo de pedido</label>
+                <select id="type" name="type">
+                  <option>Pedido normal (para llevar o comer aquí)</option>
+                  <option>Cake o pastel especial / cumpleaños</option>
+                  <option>Catering para evento o reunión</option>
+                  <option>Pregunta o sugerencia</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message">Mensaje o detalles del pedido</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Quiero 2 pasteles de guayaba y un flan grande para el domingo..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn-lg" style="width:100%;">Enviar Pedido / Mensaje</button>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem; text-align:center;">Te responderemos rápido (o llama directo). Los pedidos grandes con 24-48h de anticipación.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Dulces Cubanos</div>
+          <p class="footer-tag">Auténtico sabor de Cuba en Florida</p>
+        </div>
+        <div>
+          <div class="footer-title">Contacto</div>
+          <ul class="footer-links">
+            <li>(941) 555-0823</li>
+            <li>info@dulcescubanos.com</li>
+            <li>2847 Manatee Ave W, Bradenton</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Menú Rápido</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Pastel de Guayaba</a></li>
+            <li><a href="services.html">Flan Casero</a></li>
+            <li><a href="services.html">Empanadas</a></li>
+            <li><a href="services.html">Tres Leches</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Síguenos</div>
+          <p>Facebook • Instagram • TikTok<br>@dulcescubanosfl<br><br>¡Comparte tus fotos con #DulcesCubanos!</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Dulces Cubanos. Hecho con ❤️ y azúcar de caña. <a href="https://github.com/Inurath/dulces-cubanos-website" target="_blank">Código en GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dark-mode.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
