@@ -129,15 +129,18 @@ input, select, textarea, button { font-family: inherit; }
   position: relative; min-height: 580px;
   display: flex; align-items: center; overflow: hidden;
   background: var(--primary-dark);
-  background-image: url('images/rosi.jpg');
-  background-size: cover;
-  background-position: center top;
 }
-/* Keep the dark gradient readable over the portrait */
+.hero::before {
+  content: '';
+  position: absolute; inset: -40px;
+  background: url('images/rosi.jpg') center/cover no-repeat;
+  filter: blur(18px);
+  transform: scale(1.05);
+  z-index: 0;
+}
 .hero::after {
   content: '';
-  position: absolute;
-  inset: 0;
+  position: absolute; inset: 0;
   background: linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.05) 100%);
   z-index: 1;
   pointer-events: none;
