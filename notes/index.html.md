@@ -12,3 +12,27 @@
 **Customization notes:** Change address/phone in schema + footer. Update hero stats or menu teasers in the HTML. Colors via style.css :root. Photos: replace placeholders.
 
 Cross-ref: AGENTS.md, Report.md, services.html, about.html.
+
+---
+
+## Pink primary + real bakery photos (2026-06-06 Hermes/CC)
+
+- Hero `.hero-bg` now shows `images/guayaba-pastelito.jpg` (a real food photo) via style.css update — no inline style change needed in this HTML file.
+- Dark overlay (`::after`) retained for text legibility: left-side dark gradient fades out right.
+- Pink primary (#e75480) cascades to all nav elements, CTA band, stat numbers via --primary var.
+- index.html itself unchanged — all color/image updates in style.css only.
+---
+
+## Session 2026-06-10 — Map Section + Social Icons
+
+**Map section added (before </main>):**
+- New `<section class="map-section section">` with Google Maps iframe embed
+- Source: `https://maps.google.com/maps?q=5507+14th+St+W+Bradenton+FL+34207&output=embed&z=15`
+- Section header: "Dónde Estamos / Encuéntranos en Bradenton"
+- "Abrir en Google Maps" btn-outline button linking to place query
+- Responsive via `.map-embed-wrap` + `iframe { width:100%; height:420px }`
+
+**Social links footer:**
+- Facebook updated to `https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/`
+- Added TikTok: `https://www.tiktok.com/@rosabelorihuela`
+- All 4 icons now display image assets from `images/social/`

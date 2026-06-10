@@ -1,16 +1,16 @@
 /* ============================================================
    DULCES CUBANOS — Panadería y Dulcería Cubana Auténtica
-   Bradenton / Sarasota, FL
+   Bradenton, FL
 
    PALETA CUBANA PROFESIONAL:
-   --primary:      rojo cubano vibrante (bandera de Cuba)
+   --primary:      rosa vibrante — pink primary for Dulce Cubanos branding (sweet Cuban vibe with gold accents)
    --accent:       oro cálido (celebración, azúcar, tradición)
    ============================================================ */
 
 :root {
-  --primary: #c8102e;
-  --primary-dark: #9b0c23;
-  --primary-light: #e01535;
+  --primary: #e75480;
+  --primary-dark: #c43060;
+  --primary-light: #ff69b4;
   --accent: #d4a017;
   --accent-dark: #b88a10;
   --accent-light: #f0c040;
@@ -54,7 +54,7 @@ input, select, textarea, button { font-family: inherit; }
   white-space: nowrap;
 }
 .btn-primary { background: var(--primary); color: #fff; }
-.btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(200,16,46,0.3); }
+.btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(231,84,128,0.3); }
 .btn-accent { background: var(--accent); color: #1a0808; }
 .btn-accent:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(212,160,23,0.4); color: #fff; }
 .btn-outline { border-color: var(--primary); color: var(--primary); background: transparent; }
@@ -138,10 +138,9 @@ input, select, textarea, button { font-family: inherit; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  /* Reemplazar con foto del local o dulces:
-     background-image: url('hero.jpg');
-     background-size: cover; background-position: center; */
-  background: linear-gradient(135deg, #6b0516 0%, #c8102e 55%, #e01535 100%);
+  background-image: url('images/guayaba-pastelito.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .hero-bg::after {
   content: ''; position: absolute; inset: 0;
@@ -362,7 +361,7 @@ input, select, textarea, button { font-family: inherit; }
 }
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(200,16,46,0.1); }
+.form-group textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(231,84,128,0.1); }
 .form-group textarea { resize: vertical; min-height: 130px; }
 .contact-sidebar { display: flex; flex-direction: column; gap: 2rem; }
 .contact-info-box {
@@ -502,37 +501,18 @@ input, select, textarea, button { font-family: inherit; }
    Persiste en localStorage y respeta preferencia del sistema.
 ============================================================ */
 [data-theme="dark"] {
-  --bg: #1a0808;
-  --bg-alt: #250e0e;
-  --text: #f0e8e8;
-  --text-muted: #b09090;
-  --border: #3d1818;
+  --bg: #18101a;
+  --bg-alt: #211428;
+  --text: #f0e4ec;
+  --text-muted: #b090a8;
+  --border: #3d1848;
   --shadow: 0 4px 28px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 16px 58px rgba(0, 0, 0, 0.65);
 }
-/* --primary (rojo cubano) funciona bien en oscuro — ya es un color de marca fuerte.
-   En texto (headings/labels) pierde contraste, se cambia al dorado cálido. */
-[data-theme="dark"] .nav-logo,
-[data-theme="dark"] .logo-name,
-[data-theme="dark"] .nav-links a:hover,
-[data-theme="dark"] .nav-links a.active,
-[data-theme="dark"] .section-header h2,
-[data-theme="dark"] .service-card h3,
-[data-theme="dark"] .service-card:hover .card-link,
-[data-theme="dark"] .author-name,
-[data-theme="dark"] .about-text h2,
-[data-theme="dark"] .value-card h3,
-[data-theme="dark"] .team-name,
-[data-theme="dark"] .service-full-card h3,
-[data-theme="dark"] .service-bullets li::before,
-[data-theme="dark"] .portfolio-price,
-[data-theme="dark"] .contact-form h3,
-[data-theme="dark"] .contact-info-box h3,
-[data-theme="dark"] .contact-item strong,
-[data-theme="dark"] .contact-item a:hover {
-  color: var(--accent-light);
-}
-[data-theme="dark"] .nav-toggle span { background: var(--accent-light); }
+/* --primary (rosa cubano #e75480) contrasta bien sobre fondo oscuro — se mantiene rosa en todos los elementos */
+[data-theme="dark"] .nav-toggle span { background: var(--primary-light); }
+[data-theme="dark"] .nav-links a { color: #f5dde8; }
+[data-theme="dark"] .nav-links a:hover { color: var(--primary-light); background: rgba(231,84,128,0.18); }
 [data-theme="dark"] .form-group input:focus,
 [data-theme="dark"] .form-group select:focus,
 [data-theme="dark"] .form-group textarea:focus {
@@ -580,3 +560,20 @@ input, select, textarea, button { font-family: inherit; }
 .service-full-card:hover::before,
 .portfolio-card:hover::before { opacity: 1; }
 .hero-badge { background: linear-gradient(135deg, rgba(212,160,23,0.22) 0%, rgba(212,160,23,0.08) 100%); }
+
+/* ICONOS SOCIALES (footer) */
+.social-links a img {
+  width: 22px; height: 22px;
+  object-fit: contain; border-radius: 3px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.social-links a:hover img { transform: scale(1.15); opacity: 0.85; }
+
+/* SECCIÓN MAPA */
+.map-section { background: var(--bg-alt); }
+.map-embed-wrap {
+  border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+}
+.map-embed-wrap iframe { display: block; width: 100%; height: 420px; border: 0; }
+.map-cta { text-align: center; margin-top: 1.5rem; }

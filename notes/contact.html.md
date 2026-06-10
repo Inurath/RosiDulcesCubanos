@@ -11,3 +11,11 @@
 **Customization:** Update phone/address/email. Connect form to Formspree/Netlify later. Add real map embed.
 
 Cross-ref: index.html, services.html, Report.md.
+---
+
+## Session 2026-06-10 — Social Icons
+
+- Facebook link corrected to https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/
+- TikTok link added: https://www.tiktok.com/@rosabelorihuela
+- Instagram/WhatsApp text replaced with image icons from images/social/
+- All 4 social links now use local icon assets (facebook.png, instagram.jpg, tiktok.jpg, whatsapp.png)

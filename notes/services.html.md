@@ -13,6 +13,31 @@
 - Nav, hero, footer, CTA "Pedir ahora" / "Cotizar" in Spanish.
 - Verification: complete menu in Spanish, realistic Cuban bakery offerings, prices, cultural notes.
 
-**Customization:** Prices, exact menu items, add images to cards. Form action later to real endpoint.
+**Customization:** Prices, exact menu items. Form action later to real endpoint.
 
 Cross-ref: index.html, contact.html, style.css, Report.md.
+
+---
+
+## Pink primary + real bakery photos in service cards (2026-06-06 Hermes/CC)
+
+Product images added to the top of 4 main service cards as bleed-edge banners:
+
+| Card | Image |
+|---|---|
+| Pastel de Guayaba | images/guayaba-pastelito.jpg |
+| Flan Casero | images/flan.jpg |
+| Empanadas Cubanas | images/empanadas.jpg |
+| Tres Leches | images/tres-leches.jpg |
+
+**Implementation:** Each image wrapped in `<div style="margin: -2.25rem -2rem 1.5rem;">` — negative margins (-2.25rem top, -2rem left/right) bleed to the card's padding edges. `overflow:hidden` already set on `.service-card` clips cleanly with card's `border-radius: 14px`. Images at `height:160px; object-fit:cover; display:block; width:100%`.
+Cards 5 (Bizcochitos) and 6 (Catering) retain Lucide icons — no matching prepared image.
+Pink primary (#e75480) cascades via `--primary` to btn-outline borders, headings, card-link hover.
+---
+
+## Session 2026-06-10 — Social Icons
+
+- Facebook link corrected to https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/
+- TikTok link added: https://www.tiktok.com/@rosabelorihuela
+- Instagram/WhatsApp text replaced with image icons from images/social/
+- All 4 social links now use local icon assets (facebook.png, instagram.jpg, tiktok.jpg, whatsapp.png)
