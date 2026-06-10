@@ -13,6 +13,13 @@
 Cross-ref: index.html, services.html, Report.md.
 ---
 
+## Session 2026-06-10 — CC Verification Pass: Footer Email Added
+
+**Footer Visítanos:** Added `orihuelarosabel@gmail.com` link before hours. All 5 pages now show address, phone, email, and hours consistently.
+**Note:** The contact page main content already shows email in the info block and form action — footer email is for cross-page consistency.
+
+---
+
 ## Session 2026-06-10 — Social Icons
 
 - Facebook link corrected to https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/

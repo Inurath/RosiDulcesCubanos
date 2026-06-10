@@ -34,6 +34,13 @@ Pink primary (#e75480) via `--primary` cascades to filter buttons (active state)
 Note: this portfolio.html uses a simplified footer (`.footer-grid` not `.footer-inner`) — kept as-is, consistent with services.html pattern.
 ---
 
+## Session 2026-06-10 — CC Verification Pass: Footer Email + Price Tag Fix
+
+**Footer Visítanos:** Added email `orihuelarosabel@gmail.com` before hours — consistent with all 5 pages now.
+**Tres Leches price tag:** Changed `"Desde $45"` → `"Desde $28"` to align with services.html (whole Tres Leches $28 entero). $45 had no match in the menu.
+
+---
+
 ## Session 2026-06-10 — Social Icons
 
 - Facebook link corrected to https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/

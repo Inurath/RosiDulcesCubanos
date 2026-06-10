@@ -360,3 +360,60 @@ grep -n "map-section\|maps.google.com" index.html
 
 **Status after this session:** All 5 tasks complete. Site is ready for browser QA and git push by Hermes.
 
+---
+
+## Session Log — 2026-06-10 (CC Pro: Post-delegation verification + content patch)
+
+**Trigger:** Hermes delegated post-commit verification and reporting pass to CC Pro after completing the social links / photos / dark-mode / map / menu-pricing commit.
+
+**Startup:** Read AGENTS.md (parent + project), Report.md (full history), all 5 HTML pages, 6 companion notes, Web Tasks.md, Log Web Tasks.md.
+
+### Issues Found and Fixed
+
+**1. Copyright year inconsistency (clearly wrong → patched)**
+- `index.html` line 271 and `about.html` line 216 had `&copy; 2025`
+- `services.html`, `portfolio.html`, `contact.html` correctly had `&copy; 2026`
+- Fix: updated index.html + about.html to `2026` (current year)
+
+**2. Footer "Visítanos" column inconsistency (clearly wrong → patched)**
+- `index.html` + `about.html` footer showed: address, phone, email (no hours)
+- `services.html` + `portfolio.html` + `contact.html` footer showed: address, phone, hours (no email)
+- Fix: standardized all 5 pages to show address, phone, email, and hours — the complete contact block a bakery customer needs at a glance from any page
+
+**3. Portfolio "Desde $45" price mismatch (clearly wrong → patched)**
+- `portfolio.html` Tres Leches Especial card had tag `"Desde $45"`
+- services.html has no $45 price point: Tres Leches whole = $28 / custom cakes start at $57
+- Fix: updated tag to `"Desde $28"` (aligns with standard whole tres leches price)
+
+**4. services.html.md companion note stale pricing (noted, not a code fix)**
+- Companion note listed "Pedidos Especiales desde $45" — outdated from before Hermes 2026-06-10 pricing update
+- Added stale-data warning note to the companion file; actual services.html HTML is correct
+
+### Verification After Patches
+
+```bash
+# Copyright years
+grep -n "2025\|2026" *.html | grep "copy;" → all 5 pages: 2026 ✓
+
+# Footer email consistency
+grep -rn "orihuelarosabel" *.html → 5 occurrences (one per page) ✓
+
+# Footer hours consistency
+grep -c "Mié–Vie" *.html → 5 (one per page) ✓
+
+# Portfolio price tag
+grep -n "Desde" portfolio.html → "Desde $28" ✓
+```
+
+### What Still Needs Human Review
+
+- **Map embed:** Google Maps iframe in index.html and contact.html requires live internet — verify it renders correctly in browser with a real connection.
+- **Photo visual QA:** Real bakery images (from ImageMagick conversion of Pasteles.png, Capuchinos.jpeg, cake.png) — confirm proportions/crop look good in hero, services cards, and portfolio gallery.
+- **TikTok account:** URL `https://www.tiktok.com/@rosabelorihuela` — confirm this is the correct account handle for the business owner.
+- **about.html team section:** The "Familia Castellanos" (Roberto, Luisa, Elena, Carlos) are illustrative names for the Cuban family story. If the real owner wants to use their actual family names, this section needs personalizing.
+- **GitHub push:** Local git is clean and ready. User must run `gh auth login` first, then `gh repo create Inurath/dulces-cubanos-website --public --source . --remote origin --push` (documented in CLI TODO.md).
+
+**Companion notes updated:** All 6 notes/ files reflect 2026-06-10 session changes.
+
+**End of session:** All patches committed to files. No git push (per Hermes delegation rules). Hermes handles commit/push/sync.
+

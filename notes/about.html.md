@@ -24,6 +24,13 @@ Cross-ref: index.html, Report.md (session log), AGENTS.md.
 - Photo-placeholder CSS rules in style.css remain (no harm) — they simply no longer have a matching DOM element here.
 ---
 
+## Session 2026-06-10 — CC Verification Pass: Copyright + Footer Consistency
+
+**Copyright year:** Fixed `&copy; 2025` → `&copy; 2026` in footer-bottom.
+**Footer Visítanos:** Added `<p class="contact-line">Mié–Vie 4PM–9PM<br>Sáb–Dom 1PM–9PM</p>` after email — all 5 pages now consistently show address, phone, email, and hours in footer.
+
+---
+
 ## Session 2026-06-10 — Social Icons
 
 - Facebook link corrected to https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/

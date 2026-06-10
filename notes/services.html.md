@@ -17,6 +17,8 @@
 
 Cross-ref: index.html, contact.html, style.css, Report.md.
 
+**Note (2026-06-10):** Companion pricing note above is partially stale — "Pedidos Especiales y Catering desde $45" was updated by Hermes (2026-06-10 commit) to tiered pricing: Pequeño 10 porciones $57 / Mediano 20 porciones $78 / Grande custom consultar. The $45 figure no longer appears in the HTML.
+
 ---
 
 ## Pink primary + real bakery photos in service cards (2026-06-06 Hermes/CC)

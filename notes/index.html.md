@@ -23,6 +23,13 @@ Cross-ref: AGENTS.md, Report.md, services.html, about.html.
 - index.html itself unchanged — all color/image updates in style.css only.
 ---
 
+## Session 2026-06-10 — CC Verification Pass: Copyright + Footer Consistency
+
+**Copyright year:** Fixed `&copy; 2025` → `&copy; 2026` in footer-bottom.
+**Footer Visítanos:** Added `<p class="contact-line">Mié–Vie 4PM–9PM<br>Sáb–Dom 1PM–9PM</p>` after email — all 5 pages now consistently show address, phone, email, and hours in footer.
+
+---
+
 ## Session 2026-06-10 — Map Section + Social Icons
 
 **Map section added (before </main>):**
