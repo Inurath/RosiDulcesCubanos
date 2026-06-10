@@ -142,7 +142,7 @@ input, select, textarea, button { font-family: inherit; }
 .hero::after {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.45) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.08) 55%, rgba(255,255,255,0.22) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -167,10 +167,10 @@ input, select, textarea, button { font-family: inherit; }
 }
 .hero h1 {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
-  font-weight: 900; line-height: 1.1; color: #fff; margin-bottom: 1.25rem;
+  font-weight: 900; line-height: 1.1; color: #1c1010; margin-bottom: 1.25rem;
 }
-.hero h1 span { color: var(--accent-light); }
-.hero-sub { font-size: 1.125rem; color: rgba(255,255,255,0.75); margin-bottom: 2.5rem; max-width: 540px; line-height: 1.75; }
+.hero h1 span { color: var(--primary-dark); }
+.hero-sub { font-size: 1.125rem; color: rgba(0,0,0,0.72); margin-bottom: 2.5rem; max-width: 540px; line-height: 1.75; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
 .hero-stats { display: flex; gap: 2.5rem; flex-wrap: wrap; }
 .hero-stat { text-align: left; }
