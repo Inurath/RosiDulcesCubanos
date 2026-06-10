@@ -1,7 +1,7 @@
 **index.html (Home) — 2026-06-06 Hermes + CC delegation**
 
 - Adapted from professional template base (copied by Hermes).
-- Full Spanish + Cuban theme: title "Dulces Cubanos | Panadería y Dulcería Cubana Auténtica — Bradenton, FL", hero badge Bradenton & Sarasota, hero text about authentic Cuban sweets, quick services strip with pastries teaser, stats in Spanish ("+10 años", "Recetas de la abuela", etc.).
+- Full Spanish + Cuban theme: title "Dulces Cubanos | Panadería y Dulcería Cubana Auténtica — Bradenton, FL", hero badge Bradenton, hero text about authentic Cuban sweets, quick services strip with pastries teaser, stats in Spanish ("+10 años", "Recetas de la abuela", etc.).
 - Schema updated to Bakery with Cuban details, address Bradenton, servesCuisine "Cuban".
 - Nav, buttons, footer all Spanish ("Inicio", "Menú", "Contáctanos", "Hablamos Español").
 - Theme toggle label "Cambiar modo oscuro".
@@ -21,6 +21,7 @@ Cross-ref: AGENTS.md, Report.md, services.html, about.html.
 - Dark overlay (`::after`) retained for text legibility: left-side dark gradient fades out right.
 - Pink primary (#e75480) cascades to all nav elements, CTA band, stat numbers via --primary var.
 - index.html itself unchanged — all color/image updates in style.css only.
+
 ---
 
 ## Session 2026-06-10 — CC Verification Pass: Copyright + Footer Consistency
@@ -43,3 +44,19 @@ Cross-ref: AGENTS.md, Report.md, services.html, about.html.
 - Facebook updated to `https://www.facebook.com/p/Rosis-Dulces-Cubanos-61579793461133/`
 - Added TikTok: `https://www.tiktok.com/@rosabelorihuela`
 - All 4 icons now display image assets from `images/social/`
+
+---
+
+## Session 2026-06-10 — Owner Portrait as Logo + Hero Background
+
+**Request:** Use `images/rosi.jpg` as the site logo and main homepage hero background.
+
+**Logo change (all 5 pages):**
+- Replaced the old `.logo-mark` monogram with `<img src="images/rosi.jpg" alt="Dulces Cubanos" class="logo-img">` in nav + footer brand blocks
+- Sizing: 48×48px, `object-fit: cover`, rounded corners for a clean brand mark
+
+**Hero background change (index.html + internal pages):**
+- `style.css` now sets the main `.hero` background to `images/rosi.jpg`
+- Added `.hero::after` gradient overlay so text stays readable over the portrait
+- Disabled the old `.hero-bg` rule/photo to avoid double backgrounds
+- Internal page `.page-hero` also uses the same portrait with a darker overlay and lifted text via `z-index`
