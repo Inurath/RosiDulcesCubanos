@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú | Rosi’s Dulces Cubanos — Panadería y Dulcería Cubana en Bradenton, FL</title>
+  <title>Menú | Rosi’s Dulces Cubanos - Panadería y Dulcería Cubana en Bradenton, FL</title>
   <meta name="description" content="Menú de Rosi’s Dulces Cubanos en Bradenton, FL. Ahora en 5507 14th St W. Pasteles de guayaba, flan casero, empanadas, tres leches y más. Tel: 941-402-2026. ¡Hablamos Español!">
   <link rel="stylesheet" href="style.css">
   <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
@@ -39,6 +39,16 @@
 
   <main>
     <section class="page-hero">
+      <div class="hero-collage" aria-hidden="true">
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/cangrejitos-guayaba-15x25.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/cakes-cubano-40-50.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/flan-cubano-30.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/pastelitos-orientales-12x25.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/cake-chocolate-60.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/cupcakes-12x30.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/tartaletas-12x25.png')"></div>
+        <div class="hero-collage-cell" style="background-image:url('images/dulces/brazo-gitano-40.png')"></div>
+      </div>
       <div class="container">
         <nav class="breadcrumb" aria-label="Ruta de navegación">
           <a href="index.html">Inicio</a><span>›</span><strong>Menú</strong>
@@ -48,96 +58,348 @@
       </div>
     </section>
 
-    <section class="services section">
+    <!-- Navegación de categorías -->
+    <div class="menu-nav">
+      <div class="menu-nav-inner">
+        <a href="#pastelitos" class="cat-btn">Pastelitos y Dulces</a>
+        <a href="#postres" class="cat-btn">Postres y Entradas</a>
+        <a href="#cakes" class="cat-btn">Cakes</a>
+        <a href="#personalizados" class="cat-btn">Personalizados</a>
+      </div>
+    </div>
+
+    <!-- ===== PASTELITOS Y DULCES ===== -->
+    <section id="pastelitos" class="section">
       <div class="container">
         <div class="section-header">
-          <div class="section-label">Lo que horneamos con amor</div>
-          <h2>Dulces Tradicionales</h2>
-          <p>Desde pasteles de guayaba hasta el flan más cremoso de Florida. Todo con ingredientes auténticos y el toque cubano que no se encuentra en ningún otro lado.</p>
+          <div class="section-label">Horneados frescos cada día</div>
+          <h2>Pastelitos y Dulces</h2>
+          <p>Los clásicos cubanos que no pueden faltar. Los precios son por la cantidad indicada - perfectos para llevar, compartir o encargar para reuniones.</p>
         </div>
-
         <div class="services-grid">
+
           <div class="service-card">
-            <div style="margin: -2.25rem -2rem 1.5rem;">
-              <img src="images/guayaba-pastelito.jpg" alt="Pastel de Guayaba" style="width:100%; height:160px; object-fit:cover; display:block;">
-            </div>
-            <div class="service-icon"><i data-lucide="cake"></i></div>
-            <h3>Pastel de Guayaba</h3>
-            <p class="service-desc">La estrella de la casa. Masa hojaldrada rellena de guayaba fresca de la isla. Un bocado de nostalgia cubana.</p>
-            <div class="service-price">$4.50 c/u</div>
+            <div class="sc-img"><img src="images/dulces/cangrejitos-guayaba-15x25.png" alt="Cangrejitos de Guayaba"></div>
+            <h3>Cangrejitos de Guayaba</h3>
+            <p class="service-desc">Masa crujiente rellena de guayaba cubana. El bocadillo que desaparece primero en toda reunión. La favorita de la casa.</p>
+            <div class="service-price">15 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
 
           <div class="service-card">
-            <div style="margin: -2.25rem -2rem 1.5rem;">
-              <img src="images/flan.jpg" alt="Flan Casero" style="width:100%; height:160px; object-fit:cover; display:block;">
-            </div>
-            <div class="service-icon"><i data-lucide="coffee"></i></div>
-            <h3>Flan Casero</h3>
-            <p class="service-desc">El flan de la abuela Esperanza: cremoso, con caramelo dorado y un toque de vainilla y ron. Postre nacional de Cuba.</p>
-            <div class="service-price">$5.75 / porción</div>
-            <a href="contact.html" class="btn btn-outline">Pedir ahora</a>
+            <div class="sc-img"><img src="images/dulces/pastelitos-orientales-12x25.png" alt="Pastelitos Orientales"></div>
+            <h3>Pastelitos Orientales</h3>
+            <p class="service-desc">Receta directa de Santiago de Cuba - la ciudad de donde viene Rosi. Masa especial, relleno generoso, sabor único.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
 
           <div class="service-card">
-            <div style="margin: -2.25rem -2rem 1.5rem;">
-              <img src="images/empanadas.jpg" alt="Empanadas Cubanas" style="width:100%; height:160px; object-fit:cover; display:block;">
-            </div>
-            <div class="service-icon"><i data-lucide="utensils"></i></div>
-            <h3>Empanadas Cubanas</h3>
-            <p class="service-desc">Masa crujiente rellena de carne mechada, queso o guayaba. Clásico de las panaderías de La Habana.</p>
-            <div class="service-price">$3.25 c/u (3 por $9)</div>
-            <a href="contact.html" class="btn btn-outline">Pedir ahora</a>
+            <div class="sc-img"><img src="images/dulces/pastelitos-triangulares-12x25.png" alt="Pastelitos Triangulares de Guayaba"></div>
+            <h3>Pastelitos Triangulares de Guayaba</h3>
+            <p class="service-desc">Hojaldre dorado en forma triangular con relleno generoso de guayaba. Perfectos para compartir con el cafecito.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
 
           <div class="service-card">
-            <div style="margin: -2.25rem -2rem 1.5rem;">
-              <img src="images/tres-leches.jpg" alt="Tres Leches" style="width:100%; height:160px; object-fit:cover; display:block;">
-            </div>
-            <div class="service-icon"><i data-lucide="cake"></i></div>
-            <h3>Tres Leches</h3>
-            <p class="service-desc">Bizcocho esponjoso bañado en tres leches, cubierto de merengue. El favorito para cumpleaños y celebraciones.</p>
-            <div class="service-price">$6.50 / porción • $28 entero<br><small style="color:var(--text-muted)">Pedido con 24-48h de anticipación</small></div>
-            <a href="contact.html" class="btn btn-outline">Pedir ahora</a>
+            <div class="sc-img"><img src="images/dulces/masa-real-12x30.png" alt="Masa Real de Guayaba"></div>
+            <h3>Masa Real de Guayaba</h3>
+            <p class="service-desc">Pastelillo de masa real relleno de guayaba. Textura suave, sabor intenso. Un clasico cubano que no pasa de moda.</p>
+            <div class="service-price">12 x $30</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
 
           <div class="service-card">
-            <div class="service-icon"><i data-lucide="coffee"></i></div>
-            <h3>Bizcochitos y Cafecito</h3>
-            <p class="service-desc">Galletas de mantequilla con un toque de anís, perfectas con un cafecito cubano fuerte. Tradición de las mañanas en Cuba.</p>
-            <div class="service-price">$2.75 (3 unidades) • Cafecito $2.50</div>
-            <a href="contact.html" class="btn btn-outline">Pedir ahora</a>
+            <div class="sc-img"><img src="images/dulces/pan-gloria-10x25.png" alt="Pan de Gloria"></div>
+            <h3>Pan de Gloria</h3>
+            <p class="service-desc">Pan dulce suave relleno de crema y esponjoso por dentro. El desayuno y la merienda favorita de toda familia cubana.</p>
+            <div class="service-price">10 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
 
           <div class="service-card">
-            <div class="service-icon"><i data-lucide="users"></i></div>
-            <h3>Pedidos Especiales y Catering</h3>
-            <p class="service-desc">Cakes personalizados para quinceañeras, bodas, cumpleaños y eventos. Catering para familias y empresas. ¡Llámanos y lo hacemos a tu medida!</p>
-            <div class="service-price">Pequeño (10 porciones) $57<br>Mediano (20 porciones) $78<br>Grande / Custom: consultar precio</div>
-            <a href="contact.html" class="btn btn-accent">Cotizar / Pedir</a>
+            <div class="sc-img"><img src="images/dulces/conitos-natilla-12x25.png" alt="Conitos Rellenos de Natilla"></div>
+            <h3>Conitos Rellenos de Natilla</h3>
+            <p class="service-desc">Conitos de hojaldre crujiente rellenos de natilla cubana cremosa. Una delicia que recuerda los cumpleaños de la infancia.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/montecritos-12x25.png" alt="Montecritos y Eclairs de Natilla"></div>
+            <h3>Montecritos / Eclairs de Natilla</h3>
+            <p class="service-desc">Pastelillos alargados de hojaldre rellenos de natilla y bañados en azucar glaseada. Delicados, cremosos e irresistibles.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/mini-pay-12x25.png" alt="Mini Pay de Guayaba o Coco"></div>
+            <h3>Mini Pay de Guayaba o Coco</h3>
+            <p class="service-desc">Tartaletas individuales de guayaba o coco. Base crujiente, relleno cremoso - el tamaño perfecto para disfrutar de un bocado.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/tartaletas-12x25.png" alt="Tartaletas Surtidas"></div>
+            <h3>Tartaletas Surtidas</h3>
+            <p class="service-desc">Variedad de tartaletas con rellenos de coco, guayaba, dulce de leche y nutella. Ideales para bandejas de evento.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/rosquitas-12x20.png" alt="Rosquitas Almibadas y Azucaradas"></div>
+            <h3>Rosquitas Almibadas</h3>
+            <p class="service-desc">Rosquitas cubanas banaadas en almibar y azucar. Crujientes por fuera, tiernas por dentro. La galleta que nunca falta en las reuniones.</p>
+            <div class="service-price">12 x $20</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/senoritas-merengue-6x25.jpg" alt="Señoritas de Merengue"></div>
+            <h3>Señoritas de Merengue</h3>
+            <p class="service-desc">Bizcochos esponjosos cubiertos de merengue tostado a mano. Ligeras, elegantes y perfectas para cualquier ocasion especial.</p>
+            <div class="service-price">6 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/senoritas-natilla-4x20.png" alt="Señoritas de Natilla y Dulce de Leche"></div>
+            <h3>Señoritas de Natilla y Dulce de Leche</h3>
+            <p class="service-desc">Bizcocho suave relleno de natilla y dulce de leche artesanal. Un postre elegante que siempre sorprende a los invitados.</p>
+            <div class="service-price">4 x $20</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/mantecados-12x25.png" alt="Mantecados y Polvorones"></div>
+            <h3>Mantecados / Polvorones</h3>
+            <p class="service-desc">Las galletas cubanas de mantequilla que se deshacen en la boca. Perfectas con un cafecito o como regalo para llevar.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cabezotes-12x25.png" alt="Cabezotes"></div>
+            <h3>Cabezotes</h3>
+            <p class="service-desc">Dulces cubanos de masa esponjosa con relleno de crema. Un bocado que trae recuerdos de las panaderias de barrio en Cuba.</p>
+            <div class="service-price">12 x $25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <!-- ===== POSTRES Y ENTRADAS ===== -->
+    <section id="postres" class="section section-alt">
       <div class="container">
-        <div class="section-header section-header--center">
-          <h2>¿Por qué elegir Rosi’s Dulces Cubanos?</h2>
+        <div class="section-header">
+          <div class="section-label">Sabores de Cuba</div>
+          <h2>Postres Caseros y Entradas</h2>
+          <p>Los platos que hacen famosa a toda panaderia cubana que se respeta. Cada uno hecho a mano con ingredientes frescos.</p>
         </div>
-        <div class="values-grid" style="max-width: 900px; margin: 0 auto;">
-          <div class="value-card">
-            <h3>Recetas de Cuba</h3>
-            <p>Traídas directamente de Santiago y La Habana. Sin atajos. El sabor que extrañas de la isla.</p>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/flan-cubano-30.png" alt="Flan Cubano"></div>
+            <h3>Flan Cubano</h3>
+            <p class="service-desc">Cremoso, con caramelo oscuro y ese toque secreto de vainilla. El postre que cierra toda comida cubana como Dios manda.</p>
+            <div class="service-price">$30</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
-          <div class="value-card">
-            <h3>Horneado Diario</h3>
-            <p>Todo fresco desde las 5 AM. Nada congelado, nada de paquete. Como en la panadería de la esquina en Cuba.</p>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/brazo-gitano-40.png" alt="Brazo Gitano"></div>
+            <h3>Brazo Gitano</h3>
+            <p class="service-desc">Bizcocho enrollado relleno de guayaba, dulce de leche o nutella. Una presentacion espectacular con sabor aun mejor.</p>
+            <div class="service-price">$40</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
-          <div class="value-card">
-            <h3>Comunidad</h3>
-            <p>Atendemos con el calor cubano. Conocemos a nuestros clientes por nombre y celebramos sus momentos especiales.</p>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/pay-guayaba-25.png" alt="Pay de Guayaba o Coco"></div>
+            <h3>Pay de Guayaba o Coco</h3>
+            <p class="service-desc">Pay casero con base crujiente y relleno cremoso de guayaba o coco rallado fresco. El postre que todos piden para llevar.</p>
+            <div class="service-price">$25</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
           </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/chocoflan-50.png" alt="Chocoflan con Dulce de Leche"></div>
+            <h3>Chocoflan con Dulce de Leche</h3>
+            <p class="service-desc">Dos postres en uno: bizcocho de chocolate y flan cubano juntos en el mismo molde. El resultado es pura magia.</p>
+            <div class="service-price">$50</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/ensalada-fria-65.png" alt="Ensalada Fria"></div>
+            <h3>Ensalada Fria</h3>
+            <p class="service-desc">La ensalada fria cubana para eventos y reuniones familiares. Preparada el dia anterior para que los sabores se mezclen a la perfeccion.</p>
+            <div class="service-price">$65</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/croquetas-pollo-24x30.png" alt="Croquetas Cubanas de Pollo con Jamon"></div>
+            <h3>Croquetas Cubanas de Pollo con Jamon</h3>
+            <p class="service-desc">Croquetas caseras fritas al momento - crujientes por fuera, cremosas por dentro. Las mas pedidas en toda reunion cubana.</p>
+            <div class="service-price">24 x $30</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- ===== CAKES ===== -->
+    <section id="cakes" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Para celebrar</div>
+          <h2>Cakes y Celebraciones</h2>
+          <p>Cakes cubanos con los sabores mas pedidos. Disponibles en tamano pequeno y regular segun se indica. Pedidos con 24 horas de anticipacion.</p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cakes-cubano-40-50.png" alt="Cakes Cubanos"></div>
+            <h3>Cakes Cubanos</h3>
+            <p class="service-desc">Los sabores clasicos de siempre: coco, guayaba, nutella y dulce de leche. Bizcocho esponjoso, relleno generoso y decoracion sencilla y elegante.</p>
+            <div class="service-price">Pequeno $40 · Regular $50</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cake-capuchino-45-55.png" alt="Cake de Capuchino"></div>
+            <h3>Cake de Capuchino</h3>
+            <p class="service-desc">Bizcocho de cafe con crema de capuchino entre capas. El cake favorito de los que aman el cafe cubano - intenso, dulce y memorable.</p>
+            <div class="service-price">Pequeno $45 · Regular $55</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cake-chocolate-60.png" alt="Cake de Chocolate"></div>
+            <h3>Cake de Chocolate</h3>
+            <p class="service-desc">Bizcocho de chocolate oscuro con relleno de dulce de leche, nutella o crema de chocolate. Para los amantes del chocolate que no aceptan terminos medios.</p>
+            <div class="service-price">$60</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cake-bombon-45.png" alt="Cake con Cobertura Bombon"></div>
+            <h3>Cake con Cobertura Bombon</h3>
+            <p class="service-desc">Bizcocho cubierto con chocolate bombon que se derrite al cortar. Elegante, delicioso y perfecto para impresionar en cualquier celebracion.</p>
+            <div class="service-price">$45</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cupcakes-12x30.png" alt="Cupcakes"></div>
+            <h3>Cupcakes</h3>
+            <p class="service-desc">Cupcakes decorados a mano con los sabores de tu eleccion. Perfectos para mesas de dulces, cumpleanos infantiles y eventos especiales.</p>
+            <div class="service-price">12 x $30</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cake-numero-95.png" alt="Cake en Forma de Numero"></div>
+            <h3>Cake en Forma de Numero</h3>
+            <p class="service-desc">El cake del momento - en forma del numero que celebras. Relleno de tus sabores favoritos y decorado con frutas, macarons y flores.</p>
+            <div class="service-price">$95</div>
+            <a href="contact.html" class="btn btn-outline">Pedir</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PERSONALIZADOS ===== -->
+    <section id="personalizados" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Tu sueno, nuestras manos</div>
+          <h2>Cakes Personalizados</h2>
+          <p>Disenos especiales para tus momentos unicos. Tematicos, de varios niveles, revelaciones de genero y mas. Contactanos para precio y disponibilidad.</p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cake-revelacion-genero.png" alt="Cake Revelacion de Genero"></div>
+            <h3>Cake Revelacion de Genero</h3>
+            <p class="service-desc">El gran momento de anunciar si viene nino o nina. El cake con sorpresa dentro - cortas y todos lo descubren al mismo tiempo.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cakes-fotos-comestibles.png" alt="Cakes con Fotos Comestibles"></div>
+            <h3>Cakes con Fotos Comestibles</h3>
+            <p class="service-desc">Tu foto favorita impresa en papel comestible sobre el cake. Ideal para cumpleanos, bodas y momentos que quieres recordar siempre.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cakes-2-niveles.png" alt="Cakes de 2 Niveles"></div>
+            <h3>Cakes de 2 Niveles</h3>
+            <p class="service-desc">Cakes de doble piso para eventos grandes y bodas. Dos sabores distintos en una sola pieza espectacular que roba toda la atencion.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cakes-tematicos-nina.png" alt="Cakes Tematicos para Nina"></div>
+            <h3>Cakes Tematicos para Nina</h3>
+            <p class="service-desc">Unicornios, princesas, flores, mariposas - el cake de sus suenos para su dia especial. Cada detalle diseado con amor y mucha magia.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cakes-tematicos-ninos.png" alt="Cakes Tematicos para Ninos"></div>
+            <h3>Cakes Tematicos para Ninos</h3>
+            <p class="service-desc">Superheroes, carros, dinosaurios, futbol - el tema que tu nino ama convertido en un cake que no olvidara jamas.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/cakes-para-hombres.png" alt="Cakes para Hombres"></div>
+            <h3>Cakes para Hombres</h3>
+            <p class="service-desc">Disenos masculinos con estilo: carros, deportes, herramientas, whisky o lo que el homenajeado ame. Serios por fuera, deliciosos por dentro.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+          <div class="service-card">
+            <div class="sc-img"><img src="images/dulces/chocoflan-personalizado.png" alt="Chocoflan Personalizado"></div>
+            <h3>Chocoflan Personalizado</h3>
+            <p class="service-desc">El clasico chocoflan con un toque personalizado - decoracion especial, inscripcion o diseno para hacer de este postre un regalo memorable.</p>
+            <div class="service-price"><span class="price-consult">Consultar precio</span></div>
+            <a href="contact.html" class="btn btn-accent">Pedir cotizacion</a>
+          </div>
+
+        </div>
+        <div style="text-align:center; margin-top:2.5rem;">
+          <p style="color:var(--text-muted); margin-bottom:1rem;">Todos los pedidos especiales requieren minimo 48 horas de anticipacion.</p>
+          <a href="https://wa.me/19414022026" target="_blank" rel="noopener" class="btn btn-accent">
+            <i data-lucide="message-circle"></i> Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Listo para Hacer tu Pedido?</h2>
+        <p>Escribenos por WhatsApp o llena el formulario. Pedidos especiales con 24-48 horas de anticipacion. ¡Te atendemos con todo el cariño cubano!</p>
+        <a href="contact.html" class="btn btn-accent">Hacer Pedido</a>
       </div>
     </section>
   </main>
