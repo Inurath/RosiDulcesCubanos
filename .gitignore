@@ -1,0 +1,10 @@
+# Production site only
+notes/
+Report.md
+AGENTS.md
+.obsidian/
+.vscode/
+node_modules/
+*.zip
+*.bak
+export/
